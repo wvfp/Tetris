@@ -1,0 +1,11 @@
+C:/Users/35122/source/repos/Tetris/out/build/x64-Debug/CMakeFiles/edit_cache.dir
+C:/Users/35122/source/repos/Tetris/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir
+C:/Users/35122/source/repos/Tetris/out/build/x64-Debug/Tetris/CMakeFiles/Tetris.dir
+C:/Users/35122/source/repos/Tetris/out/build/x64-Debug/Tetris/CMakeFiles/edit_cache.dir
+C:/Users/35122/source/repos/Tetris/out/build/x64-Debug/Tetris/CMakeFiles/rebuild_cache.dir
+C:/Users/35122/source/repos/Tetris/out/build/x64-Debug/Tetris/Application/CMakeFiles/app.dir
+C:/Users/35122/source/repos/Tetris/out/build/x64-Debug/Tetris/Application/CMakeFiles/edit_cache.dir
+C:/Users/35122/source/repos/Tetris/out/build/x64-Debug/Tetris/Application/CMakeFiles/rebuild_cache.dir
+C:/Users/35122/source/repos/Tetris/out/build/x64-Debug/Widgets/CMakeFiles/widgets.dir
+C:/Users/35122/source/repos/Tetris/out/build/x64-Debug/Widgets/CMakeFiles/edit_cache.dir
+C:/Users/35122/source/repos/Tetris/out/build/x64-Debug/Widgets/CMakeFiles/rebuild_cache.dir

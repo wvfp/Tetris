@@ -32,9 +32,11 @@ struct PushButton {
 	//图片
 	SDL_Texture* imgTexture;
 	//文字
+	char* text;
 	SDL_Texture* ttfTexture;
 	//按钮的事件处理函数
-	void (*function)(SDL_Event*, PushButton*);
+	void (*function)(void*);
+	SDL_Event* event;
 };
 
 //在窗口中绘制一个按纽

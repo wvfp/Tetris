@@ -3,9 +3,14 @@
 #include "Tetris.h"
 #undef main
 
+void initTetris(void);
+void freeWidgets(void);
 int main(int argc,char*argv[])
 {
-    memset(&App, 0, sizeof(App));
+    SDL_memset(&App, 0, sizeof(App));
+    SDL_memset(widgets, 0, sizeof(widgets[0]) * 5);
+    SDL_memset(event_handles, 0, sizeof(event_handles[0]) * 5);
+    initTetris();
 	APP_Init("Tetris");
 	SDL_Event* event=(SDL_Event*)malloc(sizeof(SDL_Event));
     if (event == NULL) {
@@ -26,24 +31,44 @@ int main(int argc,char*argv[])
                 exit(0);
                 break;
             case SDL_MOUSEBUTTONDOWN:
-                menuWidgetEventHandle(event);
-                break;
             case SDL_MOUSEMOTION:
-                menuWidgetEventHandle(event);
-                break;
             case SDL_MOUSEBUTTONUP:
-                menuWidgetEventHandle(event);
+                event_handles[CURRENT_WIDGET](event);
                 break;
             default:
                 break;
             }
         }
         SDL_Delay(10);
-        drawMenuWidget();
+        widgets[CURRENT_WIDGET]();
         presentSense();
     }
     free(event);
+    freeWidgets();
     TTF_CloseFont(GlobalFont);
     SDL_Quit();
 	return 0;
+}
+
+void initTetris(void) {
+    //Widgets
+    widgets[WIDGET_MENU] = drawMenuWidget;
+    widgets[WIDGET_SETTING] = drawSettingWidget;
+    widgets[WIDGET_HELP] = drawHelpWidget;
+    //event_handles
+    event_handles[WIDGET_MENU] = menuWidgetEventHandle;
+    event_handles[WIDGET_SETTING] = settingWidgetEventHandle;
+    event_handles[WIDGET_HELP] = helpWidgetEventHandle;
+   //设置当前活动窗口 
+    WidgetChange(WIDGET_MENU);
+    return;
+}
+void freeWidgets(void) {
+    freeHelpWidgetBtn();
+    freeSettingWidgetBtn();
+    freeMenuWidgetBtn();
+    #ifdef DEBUG
+    printf("Free Widgets\n");
+    #endif // DEBUG
+
 }

@@ -1,0 +1,25 @@
+# ninja log v6
+70	1364	7533000109735812	Widgets/CMakeFiles/widgets.dir/SettingWidgwt/SettingWidget.c.obj	83621061fef1815b
+49	128	7531242555469283	Widgets/CMakeFiles/widgets.dir/GameWidgwt/GameWidgwt.c.obj	627503c83bf7e56d
+54	127	7531242555518888	Widgets/CMakeFiles/widgets.dir/HelpWidget/HelpWidgwt.c.obj	2c4dd953bd1b4e11
+43	353	7533722638219045	Tetris/CMakeFiles/Tetris.dir/Tetris.c.obj	903906ccc63d97e0
+62	1349	7533000109655528	Widgets/CMakeFiles/widgets.dir/PauseWidgwt/PauseWidget.c.obj	69df7811654f493b
+62	126	7531242555612421	Widgets/CMakeFiles/widgets.dir/PauseWidgwt/PauseWidgwt.c.obj	98f60736ae7110fd
+35	644	7533121987801940	Tetris/Application/CMakeFiles/app.dir/PushButton.c.obj	359bb43fda81b1ab
+37	309	7533002320259526	Widgets/CMakeFiles/widgets.dir/MenuWidgwt/MenuWidget.c.obj	365afb3c90a865b3
+403	532	7533722036701132	Widgets/widgets.lib	b9c1cb2048ff9e92
+20	183	7533407020108318	Tetris/Application/CMakeFiles/app.dir/texture.c.obj	969d692c40ab8e7a
+115	633	7533121988613821	Tetris/CMakeFiles/Tetris.dir/__/Application/draw.c.obj	e8a5f04ccd707b67
+66	636	7533121988125298	Tetris/Application/CMakeFiles/app.dir/tools.c.obj	f37c72863b6271f2
+49	649	7533121987954100	Tetris/Application/CMakeFiles/app.dir/draw.c.obj	9f7bf9c587df3d05
+26	641	7533121987717792	Tetris/Application/CMakeFiles/app.dir/Application.c.obj	b8a419a0dd6b8b1a
+44	152	7533698838709253	Tetris/Application/app.lib	c0b2157d93be732a
+37	1418	7533723648277150	build.ninja	c91761d3e67a5d61
+355	753	7533722641334065	Tetris/Tetris.exe	60149b3bcb039a60
+42	638	7533121987882759	Tetris/Application/CMakeFiles/app.dir/core.c.obj	9ec25f450b7a87a9
+96	469	7533121988416016	Widgets/CMakeFiles/widgets.dir/PauseWidget/PauseWidget.c.obj	661223a3a32cb552
+34	1350	7533000109378416	Widgets/CMakeFiles/widgets.dir/GameWidgwt/GameWidget.c.obj	4b33ceb677378e48
+31	259	7533717473559636	Widgets/CMakeFiles/widgets.dir/HelpWidget/HelpWidget.c.obj	ad6f1e1819953478
+74	470	7533121988205009	Widgets/CMakeFiles/widgets.dir/GameWidget/GameWidget.c.obj	2ef9ba6230d41aed
+62	397	7533722033301801	Widgets/CMakeFiles/widgets.dir/SettingWidget/SettingWidget.c.obj	6966e9bd0caa61fe
+50	402	7533722033176015	Widgets/CMakeFiles/widgets.dir/MenuWidget/MenuWidget.c.obj	9b8c30597cd71a34

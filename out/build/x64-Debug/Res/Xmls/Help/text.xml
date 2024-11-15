@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<HelpText>
+	<Part index="0">
+		<text>
+		Tetris control by keyborad:
+			 W/UpArrow  : Clockwise Rotation.
+			S/DownArrow : Hard Drop
+			A/LeftArrow : Move Left
+			D/RightArrow: Move Right
+				Space   : Soft Drop
+		</text>			 	
+	</Part>
+	<Part index="1">
+		<text>
+		Others control by keyborad:
+			    P/Esc   : Pause Game
+				R/Enter : Restart Game
+		</text>	
+		</Part>
+</HelpText>	

@@ -1,6 +1,6 @@
 #include "Application.h"
 
-const char* GlobalFontPath = "../Res/Fonts/game_ttf2.ttf";
+const char* GlobalFontPath = "../Res/Fonts/game.ttf";
 //≥ı ºªØ
 void APP_Init(char* WidgetName) {
     SDL_Init(SDL_INIT_EVERYTHING);

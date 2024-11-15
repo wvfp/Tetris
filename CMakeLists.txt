@@ -9,10 +9,15 @@ if (POLICY CMP0141)
   set(CMAKE_MSVC_DEBUG_INFORMATION_FORMAT "$<IF:$<AND:$<C_COMPILER_ID:MSVC>,$<CXX_COMPILER_ID:MSVC>>,$<$<CONFIG:Debug,RelWithDebInfo>:EditAndContinue>,$<$<CONFIG:Debug,RelWithDebInfo>:ProgramDatabase>>")
 endif()
 
+#开启Debug模式，进行测试
+add_compile_definitions(-DDEBUG)
+
 project ("Tetris")
 
 #添加SDL2的头文件
 include_directories(Dependences/include/SDL2)
+#添加mxml的头文件
+include_directories(Dependences/include/mxml)
 
 #添加SDL2的lib
 link_directories(Dependences/lib/x64)

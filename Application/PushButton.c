@@ -10,15 +10,16 @@ void drawPushButton(SDL_Renderer* renderer, PushButton* btn){
 			color.r = (Uint8)(color.r * 0.8);
 			color.g = (Uint8)(color.g * 0.8);
 			color.b = (Uint8)(color.b * 0.8);
-			rect.x -= 5;
-			rect.y -= 5;
-			rect.w += 10;
-			rect.h += 10;
+			rect.x -= 3;
+			rect.y -= 3;
+			rect.w += 6;
+			rect.h += 6;
 		}
 		else {
 			color = btn->color;
 			rect = btn->rect;
 		}
+
 		clearWidget(rect, color);
 
 		if (btn->imgTexture != NULL) {
@@ -56,16 +57,25 @@ void PB_EventHandle(SDL_Event* event, PushButton* btn) {
 				btn->state |= PB_STATE_MOUSEONBUTTON;
 			else
 				btn->state = PB_STATE_ENABLE;
+			btn->event = event;
 			break;
 		case SDL_MOUSEBUTTONDOWN:
 			if (isPointInRect(mousePos, btn->rect)) {
 				btn->state |= PB_STATE_MOUSEONBUTTON | PB_STATE_PRESSED;
-				printf("btn_clicked");
+				if (btn->function != NULL)
+					btn->function((void*)btn);
+				#ifdef DEBUG
+					printf("btn_clicked:%s\n",btn->text);
+					printf("type:%d\ntimestamp:%d\nclicks:%d\n\n",event->button.type,
+						event->button.timestamp,event->button.clicks);
+				#endif // DEBUG
+				btn->event = event;
 			}
 			break;
 		case SDL_MOUSEBUTTONUP:
 			if (isPointInRect(mousePos, btn->rect))
 				btn->state |= PB_STATE_MOUSEONBUTTON|PB_STATE_ONRELEASED;
+			btn->event = event;
 			break;
 		default:
 			break;

@@ -7,6 +7,9 @@
 #include <SDL_image.h>
 
 #include <stdio.h>
+#include <memory.h>
+#include <stdlib.h>
+#include <math.h>
 
 #define WINDOW_WIDTH 640
 #define WINDOW_HEIGHT 480
@@ -20,7 +23,18 @@ struct APP_Ptr {
 const char* GlobalFontPath;
 
 TTF_Font* GlobalFont;
-#include <memory.h>
-#include <stdlib.h>
-#include <math.h>
+
+void ((*widgets[5])(void));
+void ((*event_handles[5])(SDL_Event*));
+
+unsigned char CURRENT_WIDGET;
+
+#define WIDGET_MENU    0
+#define WIDGET_SETTING 1
+#define WIDGET_HELP    2
+#define WIDGET_GAME    3
+#define WIDGET_PAUSE   4
+//更改当前Widget
+void WidgetChange(unsigned char WIDGET);
+
 #endif //_CORE_H_

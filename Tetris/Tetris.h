@@ -8,10 +8,9 @@
 #include <stdio.h>
 #include "../Application/Application.h"
 #include "../Application/draw.h"
-#include "../Widgets/SettingWidgwt/SettingWidget.h"
-#include "../Widgets/MenuWidgwt/MenuWidget.h"
-#include "../Widgets/SettingWidgwt/SettingWidget.h"
-#include "../Widgets/SettingWidgwt/SettingWidget.h"
+#include "../Widgets/SettingWidget/SettingWidget.h"
+#include "../Widgets/MenuWidget/MenuWidget.h"
+#include "../Widgets/HelpWidget/HelpWidget.h"
 #include "../Application/core.h"
 
 #endif //_TETRIS_H_

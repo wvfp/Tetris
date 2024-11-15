@@ -8,7 +8,7 @@ const SDL_Color SDL_Black;
 const SDL_Color SDL_Red;
 const SDL_Color SDL_Greed;
 const SDL_Color SDL_Blue;
-
+const SDL_Color Color_Btn;
 void clearWindow(void);
 void prepareSence(void);
 void presentSense(void);
